@@ -8,8 +8,11 @@ body {
   background-size: cover;
   font-family: Arial, Helvetica, sans-serif;
 }
+.border {
+  border: 1px solid #fff;
+}
 .frame{
-  position: fixed;
+   position: absolute; 
   bottom: 0;
   right: 0;
   z-index: -1;
@@ -17,15 +20,17 @@ body {
 .miky{
   position: fixed;
   right: 0;
-  bottom: 75px;
+  bottom: 10px;
   z-index: -2;
-  width: 250px;
-  height: 190px;
+  width: 285px;
+  height: 300px;
+ right: -10px;
+  
 }
 .not-right{
   position: fixed;
   right: 13px;
-  bottom: 302px;
+  bottom: 303px;
   font-size: 11px;
   color: #8aa4a4;
   z-index: -1;
@@ -38,7 +43,7 @@ body {
 .yes-right{
   position: fixed;
   right: 110px;
-  bottom: 302px;
+  bottom: 303px;
   font-size: 11px;
   color: #8aa4a4;
   z-index: -1;
@@ -50,7 +55,7 @@ body {
 .enter{
   position: fixed;
   right: 214px;
-  bottom: 302px;
+  bottom: 303px;
   font-size: 11px;
   color: #8aa4a4; 
   z-index: -1;
@@ -59,14 +64,9 @@ body {
   color:#fff;
   text-decoration: none;
 }
-.chat-popup{
-  position: fixed;
-  top: 0;
-  right: 0;
-  
-}
+
 .popUp {
-  position: fixed;
+  position: absolute;
   width: 285px;
   height: 200px;
   bottom: 379px;
@@ -118,4 +118,13 @@ body {
 .hide {
   opacity: 0;
   visibility: hidden;
+}
+.right-side{
+  display: flex;
+  flex-direction: column;
+  width: 277px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+
 }
